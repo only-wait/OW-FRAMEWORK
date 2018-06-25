@@ -1,0 +1,12 @@
+<?php
+	define("ROOT_PATH",str_replace('\\','/',realpath("./")));
+	define('FRAMEWORK_ROOT',ROOT_PATH.'/OW');
+	define('DB_HOST','localhost');
+	define('DB_USER','root');
+	define('DB_PASS','root');
+	define('DB_NAME','owcms');
+	define('DB_CHAR','utf-8');
+	define('TABLE_SUFFIX','ow_');
+	require_once(FRAMEWORK_ROOT.'/OW.php');
+	\OW\ow::start();
+?>
